@@ -1,3 +1,11 @@
-# dice_throwing_simulator
+Benvenuti nel progetto Del Simulatore lancio dadi 🎲
+Questo repository contiene tutto il necessario per creare un simulatore di lancio di dadi, combinando hardware e software.
 
-in questo progetto creo un simulatore di lancio di dati con arduino, e in html, nel modello arduino creare anche modello con stampa 3D.
+Il progetto si articola in:
+
+- Arduino: Il simulatore arduino, gestisce la logica del lancio dei dadi comandato da un bottone e manda a schermo il risultato, incluso nella repository lo schema di collegamento e il modello 3D per la stampa e l'assemblaggio.
+
+- Interfaccia Web: Una pagina web che simula il processo visto con arduino, alla portata di tutti e facilmente raggiungibile tramite QR code.
+
+Scegli tu quello più adatto a te.
+Sei pronto a tirare i dadi?
