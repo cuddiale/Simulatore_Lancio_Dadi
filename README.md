@@ -9,3 +9,14 @@ Il progetto si articola in:
 
 Scegli tu quello più adatto a te.
 Sei pronto a tirare i dadi?
+
+simulazione arduino con tinkercad:
+https://www.tinkercad.com/things/aVgpXsH7ih8-lancio-dadi
+
+versione web:
+
+---
+
+o tramite QRcode
+
+---
