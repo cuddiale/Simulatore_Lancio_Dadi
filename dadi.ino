@@ -13,10 +13,19 @@ void setup()
 
 void loop()
 {
-   quando si accende il display voglio che mi  mostri "LANCIO DADI"
-   lcd_1.print("LANCIO DADI");  
-    delay(2000); //attendi 2 secondi
-    lcd_1.clear(); //pulisci il display
-    lcd_1.setCursor(0, 0); //posiziona il cursore alla prima riga
-    
+
+ if(digitalRead(PinButton) == HIGH)
+ {
+   int numero = random(1, 7); //numero casuale tra 1 e 6
+   lcd_1.clear();
+   lcd_1.print("Numero: ");
+   lcd_1.print(numero);
+   delay(1000); //attendi un secondo prima di cancellare il display
+   lcd_1.clear();
+ }
+ else if(digitalRead(PinButton) == LOW)
+ {
+   lcd_1.setCursor(0, 0);
+   lcd_1.print("Premi il pulsante");
+ }
 }
