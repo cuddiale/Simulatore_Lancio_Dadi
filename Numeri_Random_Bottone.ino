@@ -18,14 +18,19 @@ void loop()
  {
    int numero = random(1, 7); //numero casuale tra 1 e 6
    lcd_1.clear();
-   lcd_1.print("Numero: ");
+   lcd_1.setCursor(4, 0);
+   lcd_1.print("Numero ");
+   lcd_1.setCursor(6, 1);
    lcd_1.print(numero);
-   delay(1000); //attendi un secondo prima di cancellare il display
+   delay(3000); //attendi un secondo prima di cancellare il display
    lcd_1.clear();
  }
  else if(digitalRead(PinButton) == LOW)
  {
-   lcd_1.setCursor(0, 0);
-   lcd_1.print("Premi il pulsante");
+   lcd_1.setCursor(4, 0);
+   lcd_1.print("Premi il");
+   lcd_1.setCursor(4, 1);
+   lcd_1.print("Pulsante");
+
  }
 }
