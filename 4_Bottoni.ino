@@ -32,16 +32,17 @@ if (digitalRead(su) == LOW && digitalRead(giu) == LOW && digitalRead(annulla) ==
  lcd.clear();
  lcd.setCursor(0,0);
  lcd.print("Press any button");
- lcd.print("numero dadi");
- lcd.setCursor(0,1);
- lcd.print(numero);
+  
+//mettere una condizione di pausa altrimenti ripete infinito
+// come impostare la variabile
+  
  }
 
 
 // generare numero random ===> int numero = random(1, variabile)
 
 
- if digitalRead(su) == HIGH or digitalRead(giu) == HIGH or digitalRead(annulla) == HIGH or digitalRead(conferma) == HIGH
+ else if (digitalRead(su) == HIGH or digitalRead(giu) == HIGH or digitalRead(annulla) == HIGH or digitalRead(conferma) == HIGH)
  {
 
  lcd.clear();
@@ -49,6 +50,7 @@ if (digitalRead(su) == LOW && digitalRead(giu) == LOW && digitalRead(annulla) ==
  lcd.print("select number");
  lcd.setCursor(0,1);
  lcd.print(numero);
+ delay(10000);
   
  }
  
