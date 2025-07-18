@@ -3,10 +3,12 @@
 // Inizializza l'oggetto LCD con gli indirizzi dei pin (in questo caso 0, ma di solito sono altri)
 Adafruit_LiquidCrystal lcd(0);
 
-int su = 2;
+#define su 2
 int giu = 3;
 int annulla = 4;
 int conferma = 5;
+
+int numero = 0
 
 void setup() {
 
@@ -17,80 +19,20 @@ void setup() {
  pinMode(5, INPUT); //bottone conferma
  lcd.begin(16, 2);
  lcd.clear();
- lcd.print("cambiare testo"); // Scrive il messaggio iniziale
+ lcd.print("Welcome");
+ delay(3000);
 
 }
 
 
 void loop() {
 
-if (digitalRead(conferma) == HIGH)
-{
-  lcd.clear();
-  lcd.print("conferma");
-}
-
-else if (digitalRead(annulla) == HIGH;)
-{
-   lcd.clear();
-   lcd.print("annulla");
-}
-
-
-
+ lcd.clear();
+ lcd.setCursor(0,0);
+ lcd.print("numero dadi");
+ lcd.setCursor(0,1);
+ lcd.print(numero)
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
