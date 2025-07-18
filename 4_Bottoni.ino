@@ -36,6 +36,15 @@ if (digitalRead(su) == LOW && digitalRead(giu) == LOW && digitalRead(annulla) ==
  lcd.print(numero);
  }
 
+//  cointinuare con tutti i condizionali finchè non può piu il codice entrare nel loop 
+
+
+ else if (condition)
+ {
+   /* code */
+ }
+ 
+
  else
  {
     /* code */
