@@ -29,6 +29,9 @@ void loop() {
 
 if (digitalRead(su) == LOW && digitalRead(giu) == LOW && digitalRead(annulla) == LOW && digitalRead(conferma) == LOW)
 {
+
+//mettere un ciclo infinito così che non esca se non vengono premuti i tasti.
+
  lcd.clear();
  lcd.setCursor(0,0);
  lcd.print("numero dadi");
@@ -36,7 +39,14 @@ if (digitalRead(su) == LOW && digitalRead(giu) == LOW && digitalRead(annulla) ==
  lcd.print(numero);
  }
 
-//  cointinuare con tutti i condizionali finchè non può piu il codice entrare nel loop 
+
+// considerare che in base al numero di daccie da inserire sarà la simulazione 
+//  continuare con tutti i condizionali finchè non può piu il codice entrare nel loop 
+
+
+//si può prendere un input in arduino??
+
+int numero = random(1, 7); // generare numero random compreso fra tra 1 e 6
 
 
  else if (condition)
