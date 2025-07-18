@@ -34,9 +34,6 @@ void setup() {
 
 void loop() {
 
-  
-  //fare in modo che con if o altri cicli, nel momento in cui premo "annulla" richiamo la funzione reset.
-
-
+// inserire il codice in loop
 
 }
