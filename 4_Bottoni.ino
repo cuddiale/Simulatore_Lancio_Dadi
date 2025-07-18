@@ -41,7 +41,7 @@ if (digitalRead(su) == LOW && digitalRead(giu) == LOW && digitalRead(annulla) ==
     /* code */
  }
  
-
+//se nessun tasto è premuto continmuerà il loop infinito.
 
 }
 
