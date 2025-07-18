@@ -41,7 +41,7 @@ if (digitalRead(su) == LOW && digitalRead(giu) == LOW && digitalRead(annulla) ==
 // generare numero random ===> int numero = random(1, variabile)
 
 
- else if digitalRead(su) == HIGH or digitalRead(giu) == HIGH or digitalRead(annulla) == HIGH or digitalRead(conferma) == HIGH
+ if digitalRead(su) == HIGH or digitalRead(giu) == HIGH or digitalRead(annulla) == HIGH or digitalRead(conferma) == HIGH
  {
 
  lcd.clear();
