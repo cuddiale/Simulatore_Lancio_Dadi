@@ -27,15 +27,21 @@ void setup() {
 
 void loop() {
 
-//  lcd.clear();
-//  lcd.setCursor(0,0);
-//  lcd.print("numero dadi");
-//  lcd.setCursor(0,1);
-//  lcd.print(numero);
+if (digitalRead(su) == LOW && digitalRead(giu) == LOW && digitalRead(annulla) == LOW && digitalRead(conferma) == LOW)
+{
+ lcd.clear();
+ lcd.setCursor(0,0);
+ lcd.print("numero dadi");
+ lcd.setCursor(0,1);
+ lcd.print(numero);
+ }
 
-// creare codice attivando i bottoni 
+ else
+ {
+    /* code */
+ }
+ 
 
-// inziziare, se nessun bottone è premuto allora lcd.print selettore numero da lanciare
 
 }
 
