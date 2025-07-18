@@ -46,7 +46,7 @@ if (digitalRead(su) == LOW && digitalRead(giu) == LOW && digitalRead(annulla) ==
 
 //si può prendere un input in arduino??
 
-int numero = random(1, 7); // generare numero random compreso fra tra 1 e 6
+int numero = random(1, 7); // generare numero random compreso fra tra 1 e 6, creare int numero = random(1, numero_selezionato)
 
 
  else if (condition)
